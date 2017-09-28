@@ -2,7 +2,6 @@ package br.com.caelum.argentum.indicadores;
 
 import java.math.BigDecimal;
 
-import br.com.caelum.argentum.modelo.Candlestick;
 import br.com.caelum.argentum.modelo.SerieTemporal;
 
 public class MediaMovelPonderada {
@@ -12,8 +11,7 @@ public class MediaMovelPonderada {
 		BigDecimal peso = new BigDecimal("3");
 		
 		for(int i = posicao; i > posicao - 3; i--) {
-			Candlestick c = serie.getCandle(i);
-			soma = soma.add(c.getFechamento().multiply(peso));
+			soma = soma.add(serie.getCandle(i).getFechamento().multiply(peso));
 			peso = peso.subtract(new BigDecimal("1"));
 		}
 		

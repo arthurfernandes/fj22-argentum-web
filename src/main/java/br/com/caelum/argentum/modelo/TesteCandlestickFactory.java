@@ -17,9 +17,9 @@ public class TesteCandlestickFactory {
 		
 		List<Negociacao> negociacoes = Arrays.asList(negociacao1, negociacao2, negociacao3, negociacao4);
 		
-		CandlestickFactory fabrica = new CandlestickFactory();
+		CandleFactory fabrica = new CandleFactory();
 
-		Candlestick candle = fabrica.constroiCandleParaData(hoje, negociacoes);
+		Candle candle = fabrica.constroiCandleParaData(hoje, negociacoes);
 		System.out.println(candle);
 
 	}

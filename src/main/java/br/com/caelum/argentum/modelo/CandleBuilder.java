@@ -12,7 +12,7 @@ public class CandleBuilder {
 	private BigDecimal volume;
 	private Calendar data;
 	
-	public static Candlestick getIdentity(Calendar data) {
+	public static Candle getIdentity(Calendar data) {
 		return new CandleBuilder().comAbertura(BigDecimal.ZERO).comFechamento(BigDecimal.ZERO)
 				.comMinimo(BigDecimal.ZERO).comMaximo(BigDecimal.ZERO)
 				.comVolume(BigDecimal.ZERO).comData(data).geraCandle();
@@ -51,8 +51,8 @@ public class CandleBuilder {
 		return this;
 	}
 	
-	public Candlestick geraCandle() {
-		return new Candlestick(this.abertura, this.fechamento, this.minimo, 
+	public Candle geraCandle() {
+		return new Candle(this.abertura, this.fechamento, this.minimo, 
 				this.maximo, this.volume, this.data);
 	}
 }

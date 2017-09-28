@@ -5,7 +5,7 @@ import java.util.Calendar;
 
 import org.junit.Test;
 
-public class CandlestickTest {
+public class CandleTest {
 
 	@Test(expected=IllegalArgumentException.class)
 	public void precoMaximoNaoPodeSerMenorQueMinimo() {
@@ -16,7 +16,7 @@ public class CandlestickTest {
 		BigDecimal maximo = new BigDecimal("5");
 		BigDecimal volume = new BigDecimal("1200");
 		
-		new Candlestick(abertura, fechamento, minimo, maximo, volume, c);
+		new Candle(abertura, fechamento, minimo, maximo, volume, c);
 	}
 	
 	@Test(expected=IllegalArgumentException.class)
@@ -27,6 +27,6 @@ public class CandlestickTest {
 		BigDecimal maximo = new BigDecimal("5");
 		BigDecimal volume = new BigDecimal("1200");
 		
-		new Candlestick(abertura, fechamento, minimo, maximo, volume, null);
+		new Candle(abertura, fechamento, minimo, maximo, volume, null);
 	}
 }

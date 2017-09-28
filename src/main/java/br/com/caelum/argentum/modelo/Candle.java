@@ -3,7 +3,7 @@ package br.com.caelum.argentum.modelo;
 import java.math.BigDecimal;
 import java.util.Calendar;
 
-public final class Candlestick {
+public final class Candle {
 	private final BigDecimal abertura;
 	private final BigDecimal fechamento;
 	private final BigDecimal minimo;
@@ -11,7 +11,7 @@ public final class Candlestick {
 	private final BigDecimal volume;
 	private final Calendar data;
 	
-	public Candlestick(BigDecimal abertura, BigDecimal fechamento,
+	public Candle(BigDecimal abertura, BigDecimal fechamento,
 			BigDecimal minimo, BigDecimal maximo, BigDecimal volume,
 			Calendar data) {
 		if (data == null){

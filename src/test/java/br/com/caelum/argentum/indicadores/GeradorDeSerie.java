@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import br.com.caelum.argentum.modelo.Candlestick;
+import br.com.caelum.argentum.modelo.Candle;
 import br.com.caelum.argentum.modelo.SerieTemporal;
 
 
@@ -18,11 +18,11 @@ public class GeradorDeSerie {
 	 * tais candles encapusaladas em uma Serie Temporal
 	 */
 	public static SerieTemporal criaSerie(double... valores) {
-		List<Candlestick> candles = new ArrayList<>();
+		List<Candle> candles = new ArrayList<>();
 		
 		for (double d : valores) {
 			BigDecimal bd = new BigDecimal(d);
-			candles.add(new Candlestick(bd, bd, bd, bd, new BigDecimal(1000),
+			candles.add(new Candle(bd, bd, bd, bd, new BigDecimal(1000),
 					Calendar.getInstance()));
 		}
 		

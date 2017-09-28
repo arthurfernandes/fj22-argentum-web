@@ -10,8 +10,8 @@ public class TestaCandleStickFactorySemNegociacoes {
 		Calendar hoje = Calendar.getInstance();
 		List<Negociacao> negociacoes = Arrays.asList();
 		
-		CandlestickFactory fabrica = new CandlestickFactory();
-		Candlestick candle = fabrica.constroiCandleParaData(hoje, negociacoes);
+		CandleFactory fabrica = new CandleFactory();
+		Candle candle = fabrica.constroiCandleParaData(hoje, negociacoes);
 		System.out.println(candle);
 	}
 }
