@@ -3,7 +3,6 @@ package br.com.caelum.argentum.modelo;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Comparator;
 import java.util.List;
 
 public class CandleFactory {
