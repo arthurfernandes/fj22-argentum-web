@@ -9,11 +9,9 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
 public class LeitorXML {
-	
-	public List<Negociacao> carrega(InputStream inputStream) {
-		XStream stream = new XStream(new DomDriver());
-		stream.alias("negociacao", Negociacao.class);
-		return (List<Negociacao>) stream.fromXML(inputStream);
-		}
-
+	public List<Negociacao> carrega(InputStream is){
+		XStream xs = new XStream(new DomDriver());
+		xs.alias("negociacao", Negociacao.class);
+		return (List<Negociacao>) xs.fromXML(is);
+	}
 }
