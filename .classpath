@@ -10,5 +10,49 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib-teste/cglib-nodep-3.2.4.jar"/>
+	<classpathentry kind="lib" path="lib-teste/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="lib-teste/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="lib-teste/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="lib-teste/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="lib-teste/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib-teste/cssparser-0.9.22.jar"/>
+	<classpathentry kind="lib" path="lib-teste/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/guava-21.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="lib-teste/htmlunit-2.26.jar"/>
+	<classpathentry kind="lib" path="lib-teste/htmlunit-core-js-2.26.jar"/>
+	<classpathentry kind="lib" path="lib-teste/htmlunit-driver-2.26.jar"/>
+	<classpathentry kind="lib" path="lib-teste/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="lib-teste/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="lib-teste/httpmime-4.5.3.jar"/>
+	<classpathentry kind="lib" path="lib-teste/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/jetty-client-9.4.3.v20170317.jar"/>
+	<classpathentry kind="lib" path="lib-teste/jetty-http-9.4.3.v20170317.jar"/>
+	<classpathentry kind="lib" path="lib-teste/jetty-io-9.4.1.v20170120.jar"/>
+	<classpathentry kind="lib" path="lib-teste/jetty-util-9.4.1.v20170120.jar"/>
+	<classpathentry kind="lib" path="lib-teste/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/jna-platform-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="lib-teste/neko-htmlunit-2.25.jar"/>
+	<classpathentry kind="lib" path="lib-teste/phantomjsdriver-1.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-api-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-chrome-driver-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-edge-driver-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-firefox-driver-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-ie-driver-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-java-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-opera-driver-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-remote-driver-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-safari-driver-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/selenium-support-3.4.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="lib-teste/websocket-api-9.4.3.v20170317.jar"/>
+	<classpathentry kind="lib" path="lib-teste/websocket-client-9.4.3.v20170317.jar"/>
+	<classpathentry kind="lib" path="lib-teste/websocket-common-9.4.3.v20170317.jar"/>
+	<classpathentry kind="lib" path="lib-teste/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="lib-teste/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="lib-teste/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

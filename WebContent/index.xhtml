@@ -9,8 +9,11 @@
 <title>Argentum Web</title>
 </h:head>
 <h:body>
-	<h:form>
-		<h:panelGrid columns="5">
+	<h:form id="dadosGrafico">
+		<p:messages id="mensagem" autoUpdate="true"/>
+		<h:panelGrid columns="8">
+			<h:outputLabel value="Título Gráfico"/>
+			<p:inputText id="titulo" value="#{argentumBean.titulo}" required="true"/>
 			<h:outputLabel value="Média Móvel: "/>
 			<p:selectOneButton value="#{argentumBean.nomeMedia}">
 				<f:selectItem itemLabel="Simples" itemValue="MediaMovelSimples"></f:selectItem>	
@@ -22,7 +25,7 @@
 				<f:selectItem itemLabel="Abertura" itemValue="IndicadorAbertura"></f:selectItem>	
 				<f:selectItem itemLabel="Fechamento" itemValue="IndicadorFechamento"></f:selectItem>	
 			</p:selectOneButton>
-			<p:commandButton value="Gerar gráfico" update="@form" 
+			<p:commandButton id="gerarGraficoBtn" value="Gerar gráfico" update="@form" 
 				action="#{argentumBean.geraGrafico}"/>
 		</h:panelGrid>
 		<p:chart type="line" model="#{argentumBean.modeloGrafico}"
