@@ -1,17 +1,31 @@
 package br.com.caelum.argentum.indicadores;
 
-import java.math.BigDecimal;
-
 import br.com.caelum.argentum.modelo.SerieTemporal;
 
-public class MediaMovelSimples {
-	public double calcula(int posicao, SerieTemporal serie) {
-		BigDecimal soma = BigDecimal.ZERO;
-		
-		for(int i = posicao; i > posicao - 3; i--){
-			soma = soma.add(serie.getCandle(i).getFechamento());
+public class MediaMovelSimples implements Indicador{
+	private final int intervalo;
+	private final Indicador outroIndicador;
+
+	public MediaMovelSimples(Indicador outroIndicador, int intervalo) {
+		if (intervalo < 1){
+			throw new IllegalArgumentException("Não é possível criar uma média móvel com intervalo menor que 1");
 		}
 		
-		return soma.doubleValue() / 3;
+		this.outroIndicador = outroIndicador;
+		this.intervalo = intervalo;
 	}
+	
+	public double calcula(int posicao, SerieTemporal serie) {
+		double soma = 0;
+		
+		for(int i = posicao; i > posicao - this.intervalo; i--){
+			soma += outroIndicador.calcula(i, serie); 
+		}
+		
+		return soma / this.intervalo;
+	}
+	
+	public String getNome() {
+		return "MMS - " + this.outroIndicador.getNome();
+	};
 }
